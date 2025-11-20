@@ -13,3 +13,6 @@ ros2 run lab03_pkg ekf_node
 ros2 topic echo /ekf
 
 ros2 bag record -a
+
+#Questo dice al nodo: usa il clock della simulazione invece del clock reale.
+ros2 run lab03_pkg ekf_node2 --ros-args -p use_sim_time:=true
