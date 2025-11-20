@@ -42,8 +42,9 @@ class EKF_Robot(Node):
         """
         Initializes the extended Kalman filter creating the necessary matrices
         """
-        self.mu = np.array([-2.00227,-0.49999,0.])  # mean state estimate inizializzata prendendo i valori da ground truth
-
+        #self.mu = np.array([-2.00227,-0.49999,0.])  # mean state estimate inizializzata prendendo i valori da ground truth
+        self.mu = np.array([0.0, 0.0, 0.0])  # mean state estimate inizializzata a zero
+        
         self.Sigma = np.eye(self.dim_x)  # covariance state estimate
 
         self.Mt = np.eye(self.dim_u)  # process noise

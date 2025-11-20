@@ -25,6 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'ekf_node = lab03_pkg.ekf_node:main',
+            'ekf_node2 = lab03_pkg.ekf_node2:main',
+
         ],
     },
 )
